@@ -1,30 +1,6 @@
-const Header = (props) => {
-  return <h1>{props.course}</h1>
-}
-
-const Part = (props) =>{
-  return (
-    <p>
-      {props.part} {props.exercises}
-    </p>
-  )
-}
-
-const Content = () =>{
-  return (
-    <div>
-      <Part part="Fundamentals of React" exercises={10} />
-      <Part part="State of a Component" exercises={7} />
-      <Part part="Event Handling" exercises={14} />
-    </div>
-  )
-}
-
-const Total = () => {
-  return (
-    <p>Number of exercises {10 + 7 + 14}</p>
-  )
-}
+import Header from './components/Header'
+import Content from './components/Content'
+import Total from './components/Total'
 
 
 const App = () => {
@@ -40,7 +16,7 @@ const App = () => {
     <div>
       <Header course={course} />
       <Content />
-      <Total />
+      <Total total={exercises1+exercises2+exercises3}/>
     </div>
   )
 }
