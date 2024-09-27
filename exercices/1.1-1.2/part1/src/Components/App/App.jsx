@@ -4,9 +4,6 @@ import Total from "components/Total/Total"
 
 // mettre le dossier en miniscule components permet de l'inclure dans les imports
 
-
-
-
 const App = () => {
   const course = 'Half Stack application development'
   const part1 = 'Fundamentals of React'
