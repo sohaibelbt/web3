@@ -1,6 +1,11 @@
-import Header from "../Header/Header"
-import Content from "../Content/Content"
-import Total from "../Total/Total"
+import Content from "components/Content/Content"
+import Header from "components/Header/Header"
+import Total from "components/Total/Total"
+
+// mettre le dossier en miniscule components permet de l'inclure dans les imports
+
+
+
 
 const App = () => {
   const course = 'Half Stack application development'
