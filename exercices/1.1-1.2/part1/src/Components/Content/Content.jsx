@@ -9,3 +9,5 @@ const Content = (props) => {
       </div>
     )
 }
+
+export default Content
