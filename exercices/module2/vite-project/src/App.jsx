@@ -1,20 +1,9 @@
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
-const Title = (props) => {
-  return (
-    <h1>{props.title1} + {props.title2}</h1>
-  )
-}
+import ClickCounter from './components/ClickCounter'
 
 function App() {
-  const [count, setCount] = useState(0);
-  let mess;
-  if (count >= 10) {
-    mess = <p>You are a master in the art of clicking!</p>;
-  }
 
   return (
     <>
@@ -26,12 +15,9 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <Title title1={'Vite'} title2={'React'}/>
+      <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count +1)}>
-          count is {count}
-          {mess}
-        </button>
+        <ClickCounter title={'ClickCounter'} mess={'Please click on me now !'}/>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
