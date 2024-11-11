@@ -7,6 +7,7 @@ import ClickCounter from '../ClickCounter/ClickCounter';
 function App() {
   const [count, setCount] = useState(0);
   const title = "ClickCounter";
+  const messHover = "Please click on me now";
 
   return (
     <>
@@ -20,7 +21,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <ClickCounter title={title} count={count} setCount={setCount}/>
+        <ClickCounter title={title} count={count} setCount={setCount} messHover={messHover}/>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
