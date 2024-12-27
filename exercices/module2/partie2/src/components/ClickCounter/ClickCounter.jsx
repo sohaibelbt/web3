@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 const ClickCounter = ({title}) => {
     const [count, setCount] = useState(0);
     const [countAt10, setCountAt10] = useState(false);
+    const [onMouseEnt, setOnMouseEnt] = useState("");
 
     useEffect(() => {
         if (count === 10) {
@@ -11,9 +12,13 @@ const ClickCounter = ({title}) => {
 
     return (
         <>
-            <button onClick={() => setCount((count) => count + 1)}>
+            <button onClick={() => setCount((count) => count + 1)} onMouseEnter={() => setOnMouseEnt("Please click on me now !")} 
+            onMouseLeave={() => setOnMouseEnt("")}>
                 count is {count}
             </button>
+            <p>
+                {onMouseEnt}
+            </p>
             <p>
                 {countAt10 ? `${title}` : ``}
             </p>
