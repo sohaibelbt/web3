@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+
 const ClickCounter = ({title}) => {
     // Json.parse permet de récuperer la dernière valeur enregistré dans le localStorage si aucune valeur || alors 0
     // const [count, setCount] = useState(JSON.parse(localStorage.getItem("count")) || 0);
